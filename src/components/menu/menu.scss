@@ -1,0 +1,31 @@
+.menu {
+  position: relative;
+  display: flex;
+  width: 400px;
+  height: 100px;
+  justify-content: space-around;
+  align-items: center;
+  & .item {
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #011627;
+    font-family: Georgia, serif;
+    font-weight: bold;
+    &.active {
+      color: #ff9f1c;
+    }
+  }
+  & .underline {
+    transition: 0.5s;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 10%;
+    background-color: #ff9f1c;
+  }
+}
